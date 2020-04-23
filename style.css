@@ -265,6 +265,7 @@ h1 {
     margin-right: 135px;
     margin-bottom: 47px;
     flex-wrap: wrap;
+    align-self: center;
 }
 
 .header-menu li, footer-menu li {
@@ -276,6 +277,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 464px;
 }
 
 .gallery-button {
@@ -376,54 +378,81 @@ h5 {
     transform: scale(1.2);
 }
 
-/* Псевдозлемент*/
+/*Медиазапросы*/
 
-.hotel::before { 
-    display: block;
-    width: 117px;
-    background-color: #FF7931;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    content: "Новое";
-    visibility: hidden;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 110px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+@media screen and (max-width: 1400px) {
+
+    .page-header .main-nav ul, .page-footer ul {
+        display: flex; 
+        justify-content: center;
+        margin-left: 135px;
+        margin-right: 135px;
+        margin-bottom: 47px;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+    .page-header .main-nav ul li,  .page-footer ul li {
+        margin: 8px;
+    }
 }
 
-.hotel:hover::before { 
-    display: block;
-    width: 117px;
-    background-color: #FF7931;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    content: "Новое";
-    visibility: visible;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 110px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+@media screen and (max-width: 800px) {
+    .hotel-p {
+        margin-top: -50px;
+    }
 }
 
-main {
-    position: relative;
+@media screen and (min-width: 1000px) {
+
+    /* Псевдозлемент*/
+
+    .hotel::before { 
+        display: block;
+        width: 117px;
+        background-color: #FF7931;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        content: "Новое";
+        visibility: hidden;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 110px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .hotel:hover::before { 
+        display: block;
+        width: 117px;
+        background-color: #FF7931;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        content: "Новое";
+        visibility: visible;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 110px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    main {
+        position: relative;
+    }
 }
