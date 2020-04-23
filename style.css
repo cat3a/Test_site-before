@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src:
+        local("Roboto-Regular"),
+        url("fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    src: 
+        local("PlayfairDisplay-Black"),
+        url("fonts/PlayfairDisplay-Black.woff") format("woff");
+
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: local("Roboto Bold"),
+        url("fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Raleway"),
+        url("fonts/Raleway-Regular.woff") format("woff");
+}
+
+.page-header {
+    text-align: center;
+}
+
+h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+
+.header-menu  li a, .footer-menu li a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.header-menu, .footer-menu {
+    list-style: none;
+}
+
+.hotel {
+    background-image: url(img/hotel.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 464px;
+}
+
+.gallery-button {
+    display: inline-block;
+    min-width: 55px;
+    min-height: 55px;
+    background: #FF7931;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    background-image: url("img/hotel_ico.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    background-size: 27px 18px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hotel-p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 456px;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+h4 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+    color: #000000;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.review {
+    text-align: center;
+}
+
+.review-article, .theatre-article {
+    width: 370px;
+}
+
+.review-article a{
+    text-decoration: none; 
+}
+
+.theatre {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.round {
+    min-width: 707px;
+    background-image: url(img/ellipse.png);
+    background-size: 100% 116%;
+    background-position: center;
+    min-height: 600px;
+}
+
+.theatre-hr {
+    width: 100px;
+    opacity: 0.4;
+}
+
+.theatre-button {
+    display: block;
+    background: #FF7931;
+    width: 170px;
+    height: 47px;
+    padding-top: 18px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 37px;
+    background-image: url("img/arrow.png");
+    background-position: 80% 55%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.page-footer {
+    background-color: #575757;
+}
+
+h5 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.footer-menu li a{
+    color: #FFFFFF;
+}
+
+.footer-hr {
+    opacity: 0.4;
+    margin-right: 135px;
+    margin-left: 135px;
+}
+
+.footer-ico1, .footer-ico2, .footer-ico3 {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.footer-ico2, .footer-ico3 {
+    margin-left: 14px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    padding-bottom: 46px;
+}
+
+.footer-ico1 img{
+    padding-top: 12px;
+}
+
+.footer-ico2 img{
+    padding-top: 13px;
+}
+
+.footer-ico3 img{
+    padding-top: 15px;
+}
+
+/* Сетка на flex */
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 40px; 
+}
+
+.main-nav ul{
+    display: flex; 
+    justify-content: space-between;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-bottom: 47px;
+    flex-wrap: wrap;
+}
+
+.header-menu li, footer-menu li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-button {
+    margin-top: 46px;
+}
+
+h2 {
+    margin-top: 32px; 
+    margin-bottom: 139px;
+}
+
+.for-flex {
+    display: flex;
+    justify-content: center;
+    margin-right: -39px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.container {
+    width: 95%; 
+    margin: 0 auto;
+}
+
+h3 {
+    margin-top: 44px;
+    margin-bottom: 20px; 
+}
+
+.review-article {
+    margin-right: 29px;
+    margin-bottom: 29px;
+    text-align: left;
+}
+
+.review-article img {
+    padding-bottom: 15px;
+}
+
+.review-article-p {
+    padding-top: 10px;
+}
+
+.theatre {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theatre-button {
+    margin-bottom: 36px;
+}
+
+.page-footer {
+    text-align: center;
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+    margin-top: 32px;
+    margin-right: 135px;
+    margin-left: 134px;
+    flex-wrap: wrap;
+}
+
+h5 {
+    padding-top: 26px;
+}
+
+/* Небольшое "оживление" для сайта */
+
+.header-menu  li a:hover, .footer-menu li a:hover {
+    color: #FF7931;
+}
+
+.gallery-button:hover {
+    transform: scale(1.1);
+}
+
+.review-article h4:hover {
+    color: #FF7931; 
+}
+
+.theatre-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Псевдозлемент*/
+
+.hotel::before { 
+    display: block;
+    width: 117px;
+    background-color: #FF7931;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    content: "Новое";
+    visibility: hidden;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 110px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.hotel:hover::before { 
+    display: block;
+    width: 117px;
+    background-color: #FF7931;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    content: "Новое";
+    visibility: visible;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 110px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+main {
+    position: relative;
+}
